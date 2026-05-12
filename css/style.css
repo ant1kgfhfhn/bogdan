@@ -327,152 +327,63 @@ body {
   line-height: 1.9;
   color: rgba(255, 255, 255, 0.7);
 }
-/* =========================
-   MOBILE ADAPTIVE
-========================= */
-
 @media (max-width: 768px) {
-  .container {
-    padding: 0 18px;
-  }
-
-  .header {
-    padding: 18px 0;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  .burger {
-    width: 30px;
-    height: 18px;
-  }
-
   .hero {
-    height: auto;
-    min-height: 100vh;
-    padding-top: 110px;
-    padding-bottom: 70px;
-    align-items: flex-start;
+    min-height: 100svh;
+    padding-top: 120px;
+    padding-bottom: 60px;
   }
 
-  .hero__bg {
-    object-position: center;
-  }
-
-  .hero__overlay {
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.88) 0%,
-      rgba(0, 0, 0, 0.55) 45%,
-      rgba(0, 0, 0, 0.9) 100%
-    );
+  .hero .container {
+    width: 100%;
+    overflow: hidden;
   }
 
   .hero__content {
     width: 100%;
-  }
-
-  .hero__mini {
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-bottom: 14px;
+    max-width: 100%;
   }
 
   .hero__title {
-    font-size: 52px;
-    line-height: 0.9;
-    margin: 0 0 20px;
-    max-width: 100%;
+    font-size: clamp(42px, 14vw, 72px);
+    line-height: 0.88;
     word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
   }
 
   .hero__text {
-    font-size: 14px;
-    line-height: 1.5;
+    width: 100%;
     max-width: 100%;
-    margin-bottom: 28px;
-    color: rgba(255, 255, 255, 0.82);
+    font-size: 14px;
   }
 
   .hero__buttons {
-    flex-direction: column;
-    gap: 14px;
     width: 100%;
   }
 
   .hero__btn {
     width: 100%;
-    padding: 16px 20px;
-    font-size: 14px;
-    border-radius: 18px;
-    text-align: center;
+    max-width: 100%;
   }
 
-  .about {
-    min-height: auto;
-    padding: 90px 0;
+  .logo {
+    font-size: 16px;
+    max-width: 75%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
+  .services__title,
   .about__title {
-    font-size: 38px;
+    font-size: clamp(32px, 10vw, 48px);
     line-height: 1;
-    margin-bottom: 24px;
-  }
-
-  .about__text {
-    font-size: 15px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-  }
-
-  .about__btn {
-    width: 100%;
-    padding: 16px 20px;
-    border-radius: 18px;
-  }
-
-  .section-mini {
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-bottom: 16px;
-  }
-
-  .services {
-    padding: 90px 0;
-  }
-
-  .services__top {
-    margin-bottom: 40px;
-  }
-
-  .services__title {
-    font-size: 38px;
-    line-height: 1;
-  }
-
-  .services__grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .service-card {
-    padding: 30px 22px;
-    border-radius: 22px;
-  }
-
-  .service-card__number {
-    margin-bottom: 22px;
+    word-break: break-word;
   }
 
   .service-card__title {
-    font-size: 26px;
-    margin-bottom: 16px;
-  }
-
-  .service-card__text {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 24px;
   }
 }
